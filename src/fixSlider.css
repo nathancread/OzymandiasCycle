@@ -1,0 +1,3 @@
+.awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+    object-fit: contain;
+  }
