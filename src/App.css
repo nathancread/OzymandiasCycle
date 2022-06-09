@@ -1,3 +1,11 @@
+@fontface {
+  font-family: 'Cinzel', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&display=swap"')
+}
+.Byron{
+  font-family: 'Cinzel', serif;
+  color: #ffffff;
+}
 .App {
   text-align: center;
 }
@@ -13,22 +21,6 @@
   }
 }
 
-.aws-btn {
-
-  --slider-height-percentage: 64%;
-  --slider-transition-duration: 738ms;
-  --organic-arrow-thickness: 13px;
-  --organic-arrow-border-radius: 30px;
-  --organic-arrow-height: 50px;
-  --organic-arrow-color: #d5cfb5;
-  --control-button-width: 10%;
-  --control-button-height: 25%;
-  --control-button-background: transparent;
-  --control-bullet-color: #4a9c8c;
-  --control-bullet-active-color: #3f8577;
-  --loader-bar-color: #851515;
-  --loader-bar-height: 16px;
-  }
   
   
 .App-header {
@@ -41,17 +33,35 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Background-component {
-  /* The image used */
-  background-image: url("https://i.imgur.com/w9saCm7.jpg");
+.Byron-title
+{
+  /* BYRON */
 
-  /* Full height */
-  height: 100%; 
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 380px;
+  height: 135px;
+  
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 135px;
+  /* identical to box height */
+  
+  display: flex;
+  align-items: flex-end;
+  
+  color: #FFFFFF;
+  
+  border: 1px solid #000000;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
 }
 
 .App-link {
