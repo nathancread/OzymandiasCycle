@@ -1,3 +1,6 @@
-.awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+/* .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+    object-fit: contain;
+  } */
+  .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
     object-fit: contain;
   }

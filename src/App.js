@@ -1,7 +1,8 @@
 import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
-// import "react-awesome-slider/dist/styles.css";
-//import "./fixSlider.css"
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 import * as sliderSettings from "./sliderSettings.js"
 import "./App.css"
 export default function App() {
@@ -34,7 +35,13 @@ export default function App() {
         "https://i.imgur.com/w9saCm7.jpg"
     }
   ];
+  const handleDragStart = (e) => e.preventDefault();
 
+  const items = [
+    <img className="Slider-style" src="https://i.imgur.com/7roU439.png" onDragStart={handleDragStart} role="presentation" />,
+    <img className="Slider-style"  src="https://imgur.com/YRJLDPN.jpg" onDragStart={handleDragStart} role="presentation" />,
+    <img className="Slider-style"  src="https://i.imgur.com/w9saCm7.jpg" onDragStart={handleDragStart} role="presentation" />,
+  ];
   const bgImg = {
     position: "absolute",
     zIndex: -1,
@@ -45,34 +52,18 @@ export default function App() {
   };
 
   return (
-    // <div className="App">
-    //   <AwesomeSlider cssModule={AwesomeSliderStyles}>
-    //     {data.map((d) => (
-    //       <div className="item">
-    //         <div className="left">
-    //           <div className="leftContainer">
-    //             <div className="Background-component">
-    //               <img src={d.img} />
-    //             </div>
-    //             <h2>{d.title}</h2>
-    //             <p>{d.desc} </p>
-    //           </div>
-    //         </div>
 
-
-    //       </div>
-    //     ))}
-    //   </AwesomeSlider>
-    // </div>
 
     <AwesomeSlider className="App" style={sliderSettings.sliderSettings}
       fillParent={true}>
       {data.map((d) => (
-        // <div className="item">
-        //   <div className="left">
-        //     <div className="leftContainer">
         <div style={{ zIndex: 2 }} >
-
+          <div className="Slider-frame">
+            <AliceCarousel mouseTracking  items={items} disableButtonsControls={false} infinite={true}   />
+          </div>
+          <div className="Slider-frame-2">
+            <AliceCarousel  mouseTracking items={items} disableButtonsControls={false} infinite={true}   />
+          </div>
           <div className="Byron">
             <div className="Byron-title-container">
               <div className="Byron-title">{d.title}</div>
@@ -94,5 +85,6 @@ export default function App() {
     //     { "source": "https://i.imgur.com/OTaXMbg.jpg" },
     //     { "source": "https://i.imgur.com/w9saCm7.jpg" }]
     // }
+
   );
 }
