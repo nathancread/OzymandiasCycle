@@ -1,0 +1,29 @@
+.Page-left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    Width:28%;
+    height:96%;
+    /* background:blue; */
+    margin: 1% 1% 1% 1%;
+  }
+  .Page-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    Width: 28%;
+    height:96%;
+    /* background:blue; */
+    margin: 1% 1% 1% 1%;
+
+  }
+  .Page-center {
+    position: absolute;
+    left: 29%;
+    top: 0px;
+    Width: 40%;
+    height:96%;
+    /* background:black; */
+    margin: 1% 1% 1% 1%;
+  }
+  

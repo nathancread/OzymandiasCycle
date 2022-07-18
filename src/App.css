@@ -11,164 +11,17 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-
+    z-index: 2;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .App::-webkit-scrollbar {
   display: none;
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-  
-  
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.Byron-title
-{
-/* BYRON */
-
-
-width: 380px;
-height: 135px;
-
-font-family: 'Cinzel';
-font-style: normal;
-font-weight: 700;
-font-size: 100px;
-line-height: 135px;
-/* identical to box height */
-
-display: flex;
-align-items: flex-end;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: 1;
-order: 0;
-flex-grow: 0;
-
-
-}
-.Byron-title-container
-{
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
-
-position: absolute;
-width: 380px;
-height: 135px;
-left: calc(50% - 380px/2 - 243px);
-top: 5px;
-}
-.Byron-description-container
-{
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
-
-position: absolute;
-width: 633px;
-height: 152px;
-right: 230px;
-top: 25px;
-}
-.Byron-description
-{
-  width: 633px;
-height: 152px;
-
-font-family: 'Cinzel';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 32px;
-
-color: #FFFFFF;
-
-mix-blend-mode: lighten;
-
-/* Inside auto layout */
-
-flex: 1;
-order: 0;
-flex-grow: 1;
-flex-shrink: 1;
-}
-.Slider-frame
-{
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: flex-end;
-padding: 80px 100px;
-gap: 80px;
-
-position: absolute;
-width: 600px;
-height: 300px;
-left: 4%;
-top: 9%;
-}
-.Slider-frame-2
-{
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: flex-end;
-padding: 80px 100px;
-gap: 80px;
-
-position: absolute;
-width: 600px;
-height: 300px;
-left: 34%;
-top: 9%;
-}
-.Slider-style
-{
-  width: 80%;
-height: 720px;
-top: -100px;
-background: #D9D9D9;
-
-/* Inside auto layout */
-
-flex: 1;
-order: 0;
-flex-grow: 1;
-flex-shrink: 1;
-
 }
 
 .App-link {
