@@ -3,12 +3,43 @@ import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import ReactCardFlip from 'react-card-flip';
+import FlipCard from "./FlipCard";
 
 import * as sliderSettings from "./sliderSettings.js"
-import "./App.css"
+import "./App.scss"
 import "./Byron.css"
+
 export default function App() {
-  
+  const playerRaces = [
+    {
+      id: "1",
+      frontStyle: "Byron-front-1",
+
+      titleStyle: "Byron-title-1",
+      title: "CHILLMARROW",
+
+      subtitleStyle: "Byron-subtitle-1",
+      subtitle: "Stoic and honorable, the chillmarrow are as uncompormising as the ice they call home. ",
+
+      imageStyle: "Byron-image-style",
+      imageLink: "https://i.imgur.com/8hpqSLm.png",
+      
+      descriptionTitleStyle: "Byron-description-title-1",
+      descriptionTitle:"Byron-description-title-1",
+
+      variant: "hover",
+      front: "Hover",
+      back: "Back"
+    },
+    {
+      id: "2",
+      frontStyle: "Byron-front-1",
+      variant: "hover",
+      front: "Hover",
+      back: "Back"
+    }
+
+  ];
   const data = [
     {
       id: "1",
@@ -41,9 +72,9 @@ export default function App() {
   const handleDragStart = (e) => e.preventDefault();
 
   const backgrounds = [
-    <img key="background1" className="Slider-style" src="https://i.imgur.com/7roU439.png" onDragStart={handleDragStart} role="presentation" />,
-    <img key="background2" className="Slider-style" src="https://imgur.com/YRJLDPN.jpg" onDragStart={handleDragStart} role="presentation" />,
-    <img key="background3" className="Slider-style" src="https://i.imgur.com/w9saCm7.jpg" onDragStart={handleDragStart} role="presentation" />,
+    <img id="1" className="Slider-style" src="https://i.imgur.com/7roU439.png" onDragStart={handleDragStart} role="presentation" />,
+    <img id="2" className="Slider-style" src="https://imgur.com/YRJLDPN.jpg" onDragStart={handleDragStart} role="presentation" />,
+    <img id="3" className="Slider-style" src="https://i.imgur.com/w9saCm7.jpg" onDragStart={handleDragStart} role="presentation" />,
   ]
   const bgImg = {
     position: "absolute",
@@ -74,11 +105,14 @@ export default function App() {
         //       <div className="Byron-description">{d.desc}</div>
         //     </div>
         //   </div>
+
         <div className="App" >
           <div key={d.key} className='page'>
             <img style={bgImg} src={d.img} />
             <div className="Page-left">
-              <div className="Byron-left"></div>
+              {playerRaces.map((card) => (
+                <FlipCard key={card.id} card={card} />
+              ))}
             </div>
             <div className="Page-center"></div>
             <div className="Page-right"></div>
