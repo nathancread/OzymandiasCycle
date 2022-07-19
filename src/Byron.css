@@ -9,22 +9,25 @@
   @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700');
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800');
   @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400');
-  .Byron-title-1{
-    font-family: 'Cinzel Decorative', serif;
+  
+  .Byron-main-title{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 5.2vw;
     color: #ffffff;
-    font-size: 3.1vw;
+    font-weight: 400;
+    text-align: center;
+
+  }
+  
+  .Byron-title-1{
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    font-size: 3.2vw;
     text-align: center;
     font-weight: 500;
 
   }
-  .Byron-main-title{
-    font-family: 'Cinzel Decorative', cursive;
-    color: #ffffff;
-    font-size: 3.1vw;
-    text-align: center;
-    font-weight: 400;
 
-  }
   .Byron-subtitle-1{
     font-family: 'PT Serif', serif;
     color: #ffffff;
@@ -106,9 +109,9 @@
   .Byron-info-box
   {
     position: absolute;
-    top: 5%;
+    top: 2%;
     width: 100%;
-    height: 95%;
+    height: 98%;
     margin: 0 0 0 0;
     background:rgba(45, 45, 45,.8);
 

@@ -51,10 +51,21 @@ export default function App() {
     {
       id: "1",
       icon: "asset/mobile.png",
-      title: "Byron",
-      titleStyle: "Byron-title-1",
+      title: "BYRON",
+      titleStyle: "Byron-main-title",
+      subtitleStyle: "Byron-subtitle-1",
+      
+      descriptionTitleStyle: "Byron-description-title-1",
+      descriptionTitle2:"The Pleasure Dome",
+      descriptionTitle1:"Harsh Society",
+
+      descriptionStyle: "Byron-description-1",
+      description2:" TThe feircely individualist Chillmarrow value nothing as highly as their honor. Their intense focus on honor gives them a reputation as strict stoic, uncompromising yet very dependable.   ",
+      description1:"Millennia of evolution have prepared the Chillmarrow to swim breath and create cities beneath the slushy ice of the swamp.  ",
+
+
       desc:
-        "The freezing wind bites at your face as you survey the barren tundra. Stinking corpses piled dozens high, charred beyond recognition to prevent their reawakening. ",
+        "The freezing wind bites at your face as you survey the barren tundra. Stinking corpses piled dozens high, charred beyond recognition to prevent their reawakening.",
       img:
         "https://i.imgur.com/w6qSGWC.jpg",
       map:
