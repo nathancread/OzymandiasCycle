@@ -8,6 +8,7 @@ import FlipCard from "./FlipCard";
 import * as sliderSettings from "./sliderSettings.js"
 import "./App.scss"
 import "./Byron.css"
+import InfoBox from "./InfoBox";
 
 export default function App() {
   const playerRaces = [
@@ -51,10 +52,13 @@ export default function App() {
       id: "1",
       icon: "asset/mobile.png",
       title: "Byron",
+      titleStyle: "Byron-title-1",
       desc:
         "The freezing wind bites at your face as you survey the barren tundra. Stinking corpses piled dozens high, charred beyond recognition to prevent their reawakening. ",
       img:
-        "https://i.imgur.com/w6qSGWC.jpg"
+        "https://i.imgur.com/w6qSGWC.jpg",
+      map:
+        "https://i.imgur.com/jx5UKlV.png"
     },
     {
       id: "2",
@@ -77,11 +81,11 @@ export default function App() {
   ];
   const handleDragStart = (e) => e.preventDefault();
 
-  const backgrounds = [
-    <img id="1" className="Slider-style" src="https://i.imgur.com/7roU439.png" onDragStart={handleDragStart} role="presentation" />,
-    <img id="2" className="Slider-style" src="https://imgur.com/YRJLDPN.jpg" onDragStart={handleDragStart} role="presentation" />,
-    <img id="3" className="Slider-style" src="https://i.imgur.com/w9saCm7.jpg" onDragStart={handleDragStart} role="presentation" />,
-  ]
+  // const backgrounds = [
+  //   <img id="1" className="Slider-style" src="https://i.imgur.com/7roU439.png" onDragStart={handleDragStart} role="presentation" />,
+  //   <img id="2" className="Slider-style" src="https://imgur.com/YRJLDPN.jpg" onDragStart={handleDragStart} role="presentation" />,
+  //   <img id="3" className="Slider-style" src="https://i.imgur.com/w9saCm7.jpg" onDragStart={handleDragStart} role="presentation" />,
+  // ]
   const bgImg = {
     position: "absolute",
     zIndex: -1,
@@ -115,13 +119,21 @@ export default function App() {
         <div className="App" >
           <div key={d.key} className='page'>
             <img style={bgImg} src={d.img} />
+            
+            
             <div className="Page-left">
               {playerRaces.map((card) => (
                 <FlipCard key={card.id} card={card} />
               ))}
             </div>
-            <div className="Page-center"></div>
-            <div className="Page-right"></div>
+            <div className="Page-center">
+              <InfoBox key={d.id} info={d} />
+            </div>
+            <div className="Page-right">
+            {playerRaces.map((card) => (
+                <FlipCard key={card.id} card={card} />
+              ))}
+            </div>
           </div>
         </div>
 
