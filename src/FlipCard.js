@@ -44,14 +44,17 @@ function FlipCard({ card }) {
             <div className={card.titleStyle}>{card.title}</div>
             <div className={card.subtitleStyle}>{card.subtitle}</div>
             <img className="photo" src={card.imageLink} ></img>
-            <div className={card.descriptionTitleStyle}>{card.descriptionTitle}</div>
+            <div className={card.descriptionTitleStyle}>{card.descriptionTitle1}</div>
+            <div className={card.descriptionStyle}>{card.description1}</div>
+            <div className={card.descriptionTitleStyle}>{card.descriptionTitle2}</div>
+            <div className={card.descriptionStyle}>{card.description2}</div>
 
           </div>
 
         </div>
         <div className="card back">
           <div>
-            <p className="card-text fs-1 fw-bold">{card.back}</p>
+            <h1>MECHANICS GOES HERE</h1>
           </div>
         </div>
       </div>

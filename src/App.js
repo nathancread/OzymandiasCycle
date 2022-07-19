@@ -19,13 +19,19 @@ export default function App() {
       title: "CHILLMARROW",
 
       subtitleStyle: "Byron-subtitle-1",
-      subtitle: "Stoic and honorable, the chillmarrow are as uncompormising as the ice they call home. ",
+      subtitle: "Honorable and stoic, the Chillmarrow are as uncompormising as the ice they call home. ",
 
       imageStyle: "Byron-image-style",
       imageLink: "https://i.imgur.com/8hpqSLm.png",
       
       descriptionTitleStyle: "Byron-description-title-1",
-      descriptionTitle:"Byron-description-title-1",
+      descriptionTitle1:"Meltwater Swamp",
+
+      descriptionStyle: "Byron-description-1",
+      description1:" The unique physiology of the Chillmarrow allow them to live deep inside the frozen Meltwater Swamp. Millennia of evolution have prepared the Chillmarrow to swim breath and create cities beneath the slushy ice of the swamp.  ",
+     
+      descriptionTitle2:"Stength and Honor",
+      description2:"The feircely individualist Chillmarrow value nothing as highly as their honor. Their intense focus on honor gives them a reputation as strict stoic, uncompromising yet very dependable. Chillmarrow are often found as gaurds, tutors, sailors or mercenaries.",
 
       variant: "hover",
       front: "Hover",
