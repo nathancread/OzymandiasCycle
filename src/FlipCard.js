@@ -43,7 +43,7 @@ function FlipCard({ card }) {
           <div className={card.frontStyle}>
             <div className={card.titleStyle}>{card.title}</div>
             <div className={card.subtitleStyle}>{card.subtitle}</div>
-            <img className="photo" src={card.imageLink} ></img>
+            <img alt="card"className="photo" src={card.imageLink} ></img>
             <div className={card.descriptionTitleStyle}>{card.descriptionTitle1}</div>
             <div className={card.descriptionStyle}>{card.description1}</div>
             <div className={card.descriptionTitleStyle}>{card.descriptionTitle2}</div>

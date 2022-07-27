@@ -8,7 +8,7 @@
   } */
   @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700');
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800');
-  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500');
   
   .Byron-main-title{
     font-family: 'Cinzel Decorative', cursive;
@@ -25,11 +25,10 @@
     font-size: 3.2vw;
     text-align: center;
     font-weight: 500;
-
   }
 
   .Byron-subtitle-1{
-    font-family: 'PT Serif', serif;
+    font-family: 'Raleway', sans-serif;
     color: #ffffff;
     font-size: .9vw;
     text-align: center;
@@ -54,7 +53,7 @@
   }
   .Byron-description-1
   {
-    font-family: 'PT Serif', serif;
+    font-family: 'Raleway', sans-serif;
     color: #ffffff;
     font-size: 0.9vw;
     text-align: left;
@@ -117,6 +116,18 @@
 
   }
 
+  .Byron-button
+  {
+    background:transparent;
+    border:none;
+    outline:none;
+    height:17%;
+    width:10%;
+    margin-top: 14%;
+    cursor:pointer;
+    margin-left:60%;
+    
+  }
   .Byron-map-box
   {
     width: 96%;

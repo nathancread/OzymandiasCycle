@@ -1,0 +1,61 @@
+.Select-title-1{
+    margin-top: 2%;
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    font-size: 4.0vw;
+    text-align: center;
+    font-weight: 500;
+  }
+  .Select-subtitle-1{
+    font-family: 'Cinzel', serif;
+    margin-top: .5%;
+
+    color: #ffffff;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 400;
+  }
+  .Select-header-line{
+    margin-top: 5%;
+
+    border-top: 2px solid white;
+    color: #ffffff;
+
+  }
+  .Select-header-title{
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    font-size: 2.3vw;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .Select-header-subtitle{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 1.2vw;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: .5%;
+
+    font-weight: 1;
+  }
+.Select-button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1;
+    text-align: center;
+
+    width: 20%;
+    height: auto;
+    background:rgba(0, 0, 0,.1);
+    color: white;
+    font-size: 20px;
+    padding: 2% 10%;
+    border-radius: 20px;
+    border-style: solid;
+    margin-top: 3%;
+
+    margin-left: 5%;
+    cursor: pointer;
+}
