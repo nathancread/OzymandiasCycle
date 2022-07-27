@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/OzymandiasCycle/static/css/main.eee04caf.css",
-    "main.js": "/OzymandiasCycle/static/js/main.ffcfa043.js",
+    "main.css": "/OzymandiasCycle/static/css/main.5e559744.css",
+    "main.js": "/OzymandiasCycle/static/js/main.00f7fd27.js",
     "static/js/787.38e9985f.chunk.js": "/OzymandiasCycle/static/js/787.38e9985f.chunk.js",
     "index.html": "/OzymandiasCycle/index.html",
-    "main.eee04caf.css.map": "/OzymandiasCycle/static/css/main.eee04caf.css.map",
-    "main.ffcfa043.js.map": "/OzymandiasCycle/static/js/main.ffcfa043.js.map",
+    "main.5e559744.css.map": "/OzymandiasCycle/static/css/main.5e559744.css.map",
+    "main.00f7fd27.js.map": "/OzymandiasCycle/static/js/main.00f7fd27.js.map",
     "787.38e9985f.chunk.js.map": "/OzymandiasCycle/static/js/787.38e9985f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eee04caf.css",
-    "static/js/main.ffcfa043.js"
+    "static/css/main.5e559744.css",
+    "static/js/main.00f7fd27.js"
   ]
 }
