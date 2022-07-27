@@ -12,7 +12,7 @@ export default function App() {
 
     <Routes>
       <Route path='/OzymandiasCycle' element={<Ozymandias />} />
-      <Route path='/Byron' element={<Byron/>} />
+      <Route path='/OzymandiasCycle/Byron' element={<Byron/>} />
 
     </Routes>
     </BrowserRouter>

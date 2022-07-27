@@ -16,7 +16,7 @@
     font-weight: 400;
   }
   .Select-header-line{
-    margin-top: 5%;
+    margin-top: 6%;
 
     border-top: 2px solid white;
     color: #ffffff;
@@ -38,6 +38,7 @@
     text-align: left;
     margin-left: 5%;
     margin-top: .5%;
+    margin-bottom: 5%;
 
     font-weight: 1;
   }
@@ -54,8 +55,10 @@
     padding: 2% 10%;
     border-radius: 20px;
     border-style: solid;
-    margin-top: 3%;
+    /* margin-top: 3%; */
 
     margin-left: 5%;
     cursor: pointer;
+    text-decoration: none;
+
 }

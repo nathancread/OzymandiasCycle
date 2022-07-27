@@ -23,6 +23,7 @@ const Ozymandias = () => {
         title="Hey, it is optional pane title.  I can be React component too."
         from="left"
         width="30%"
+        height="100%"
         hideHeader="true"
         onRequestClose={() => setState({ isPaneOpenLeft: false })}
       >
@@ -31,17 +32,17 @@ const Ozymandias = () => {
         <div className="Select-header-line"></div>
         <div className="Select-header-title">World</div>
         <div className="Select-header-subtitle">This cold and brutal world is infested with undead, dangerous cults and brutally strict caste system.</div>
-        <a href="/Byron"><div className="Select-button"  >More Info</div></a>
+        <a href="/OzymandiasCycle/Byron" className="Select-button"  >More Info</a>
 
         <div className="Select-header-line"></div>
         <div className="Select-header-title">Races</div>
         <div className="Select-header-subtitle">The harsh enviornment of Byron has led to unique and powerful biological adaptations. </div>
-        <div className="Select-button" >More Info</div>
+        <a href="/OzymandiasCycle/Byron" className="Select-button"  >More Info</a>
 
         <div className="Select-header-line"></div>
         <div className="Select-header-title">Factions</div>
         <div className="Select-header-subtitle">The evil nacent evil surging though Byron inspires excellence from some and brings out the monsters in others. </div>
-        <div className="Select-button" >More Info</div>
+        <a href="/OzymandiasCycle/Byron" className="Select-button"  >More Info</a>
 
 
       </SlidingPane>
