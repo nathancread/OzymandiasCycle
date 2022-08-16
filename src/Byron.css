@@ -133,3 +133,19 @@
     width: 96%;
     margin: 0% 2.5% 0% 2.5%;
   }
+  .Byron-bg
+  {
+    background:rgba(45, 45, 45,.8);
+    height:100%;
+    width:100%;
+  }
+
+  .Byron-ability-scores
+  {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-top: 25%;
+
+  }

@@ -10,7 +10,7 @@ return (
     <div className={info.subtitleStyle}>{info.desc} </div>
     
     <div className="Byron-map-box">
-    <img alt="" className="photo" src={info.map} ></img>
+    {/* <img alt="" className="photo" src={info.map} ></img> */}
     <div className={info.descriptionTitleStyle}>{info.descriptionTitle1}</div>
     <div className={info.descriptionStyle}>{info.description1}</div>
     <div className={info.descriptionTitleStyle}>{info.descriptionTitle2}</div>

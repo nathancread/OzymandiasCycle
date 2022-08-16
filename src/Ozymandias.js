@@ -23,7 +23,6 @@ const Ozymandias = () => {
         title="Hey, it is optional pane title.  I can be React component too."
         from="left"
         width="30%"
-        height="100%"
         hideHeader="true"
         onRequestClose={() => setState({ isPaneOpenLeft: false })}
       >
