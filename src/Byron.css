@@ -48,7 +48,8 @@
     text-align: left;
     margin-top: 0.6%;
     border-bottom: 2px solid white;
-
+    margin-left: 2%;
+    margin-right: 2%;
     font-weight: 1;
   }
   .Byron-description-1
@@ -69,7 +70,7 @@
     width:100%;
     height:auto;
     opacity: 1.0;
-
+    /* margin: 3%; */
   }
 
   
@@ -80,7 +81,7 @@
     Width:28%;
     height:90%;
     /* background:blue; */
-    margin: 4% 1% 1% 2.5%;
+    margin: 4% 1% 1% 10%;
   }
   .Page-right {
     position: absolute;
@@ -94,10 +95,10 @@
   }
   .Page-center {
     position: absolute;
-    left: 29%;
+    left: 37%;
     top: 0px;
     Width: 38%;
-    height:96%;
+    height:90%;
     /* background:black; */
     margin: 1% 2% 1% 2%;
   }
@@ -147,5 +148,36 @@
     font-size: 1.3vw;
     text-align: center;
     margin-top: 25%;
+  }
 
+  .Byron-icon
+  {
+    width:11%;
+    height:auto;
+    opacity: 1.0; 
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: .75%;
+    margin-bottom: .75%;
+
+  }
+  .Byron-icon-title
+  {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 1.8vw;
+
+    /* text-align: left; */
+    /* margin-top: 0.6%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-weight: 1; */
+  }
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+      align-items: center;
+      margin-left: 1%;
+      margin-right: 1%;
+  
   }
