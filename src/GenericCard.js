@@ -9,11 +9,11 @@ import "./border.scss"
 function GenericCard({ card }) {
     //const [showBack, setShowBack] = useState(false);
     return (
-        <div className="card front" >
+        // <div className="card front" >
             <div className={card.backgroundStyle}>
                 <div className={card.frontStyle}>
                     <div className={card.titleStyle}>{card.title}</div>
-                    <div className={card.subtitleStyle}>{card.subtitle}</div>
+                    {/* <div className={card.subtitleStyle}>{card.subtitle}</div> */}
                     <div className="border-container">
                         <div class={card.strStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">STR</div></div></div>
                         <div class={card.dexStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">DEX</div></div></div>
@@ -44,7 +44,7 @@ function GenericCard({ card }) {
 
                 </div>
             </div>
-        </div>
+        // </div>
     );
 }
 

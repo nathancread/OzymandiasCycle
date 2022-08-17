@@ -15,7 +15,16 @@ return (
     <div className={info.descriptionStyle}>{info.description1}</div>
     <div className={info.descriptionTitleStyle}>{info.descriptionTitle2}</div>
     <div className={info.descriptionStyle}>{info.description2}</div>
-   
+    <div className={info.descriptionTitleStyle}>{info.descriptionTitle3}</div>
+    <div className={info.descriptionStyle}>{info.description3}</div>
+    <div className={info.descriptionTitleStyle}>{info.descriptionTitle4}</div>
+    <ul>
+              <li className={info.bulletStyle}><b>{info.abilityTitle1}</b>{info.ability1}</li>
+              <li className={info.bulletStyle}><b>{info.abilityTitle2}</b>{info.ability2}</li>
+              <li className={info.bulletStyle}><b>{info.drawbackTitle1}</b>{info.drawback1}</li>
+        </ul>
+
+
     </div>
     </div>
   );
