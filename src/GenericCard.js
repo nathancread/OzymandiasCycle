@@ -15,12 +15,12 @@ function GenericCard({ card }) {
                     <div className={card.titleStyle}>{card.title}</div>
                     {/* <div className={card.subtitleStyle}>{card.subtitle}</div> */}
                     <div className="border-container">
-                        <div class={card.strStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">STR</div></div></div>
-                        <div class={card.dexStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">DEX</div></div></div>
-                        <div class={card.conStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">CON</div></div></div>
-                        <div class={card.intStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">INT</div></div></div>
-                        <div class={card.wisStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">WIS</div></div></div>
-                        <div class={card.chaStyle}><div class="shape-inner octagon"><div class="Byron-ability-scores">CHA</div></div></div>
+                        <div className={card.strStyle}><div className="shape-inner octagon"><div className="Byron-ability-scores">STR</div></div></div>
+                        <div className={card.dexStyle}><div className="shape-inner octagon"><div className="Byron-ability-scores">DEX</div></div></div>
+                        <div className={card.conStyle}><div className="shape-inner octagon"><div className="Byron-ability-scores">CON</div></div></div>
+                        <div className={card.intStyle}><div className="shape-inner octagon"><div className="Byron-ability-scores">INT</div></div></div>
+                        <div className={card.wisStyle}><div className="shape-inner octagon"><div className="Byron-ability-scores">WIS</div></div></div>
+                        <div className={card.chaStyle}><div className="shape-inner octagon"><div className="Byron-ability-scores">CHA</div></div></div>
                     </div>
                     <img alt="card" className="photo" src={card.imageLink} ></img>
                     <div className={card.descriptionTitleStyle}>{card.descriptionTitle1}</div>

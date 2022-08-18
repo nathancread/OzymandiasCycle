@@ -55,10 +55,12 @@ const Byron = () => {
       id: "1",
       icon: "asset/mobile.png",
       title: "Chillmarrow",
+      mainTitle: "races of byron",
+
       titleStyle: "Byron-title-1",
       subtitleStyle: "Byron-subtitle-1",
-      bulletStyle:"Byron-bullets-1",
-      
+      bulletStyle: "Byron-bullets-1",
+
       descriptionTitleStyle: "Byron-description-title-1",
       descriptionStyle: "Byron-description-1",
 
@@ -67,7 +69,7 @@ const Byron = () => {
 
       descriptionTitle2: "Meltwater Swamp",
       description2: "The Chillmarrow live in Meltwater Swamp, a desolate frozen swampland in the north west of Byron. They live primarily as ice fishermen collecting the plants and animals which can survive in the frozen swamp to survive. They live in small tribal units which meet frequently to share stories and tea with each other.", descriptionStyle: "Byron-description-1",
-      
+
       descriptionTitle3: "Strength and Honor",
       description3: " The feircely individualist Chillmarrow value nothing as highly as their honor. Their intense focus on honor gives them a reputation as strict stoic, uncompromising yet very dependable. Although Chillmarrow tend to keep to themselves they enjoy a good reputation among the other races in the System.",
 
@@ -79,14 +81,48 @@ const Byron = () => {
       ability2: "Gain the Ability to earth glide, per the spell Earth Glide through any frozen liquid.",
       drawback1: "Cannot exceed 30ft of movement (on land) in any turn. This penalty includes movment from 5ft steps, charge attacks and the run action",
 
-      // Marsh-born 15ft burrow/earth glide speed in cold environments
-      // Negative
-      // Aquatic: Cannot exceed 30ft of movement (on land) in any turn. This includes 5ft step and charging and stuff like that. 
-      
 
-      desc:"Honorable and stoic, the Chillmarrow are as uncompormising as the ice they call home. ",
-      img:"https://i.imgur.com/2Z14LnV.png",
-      map:"https://i.imgur.com/jx5UKlV.png"
+
+
+      desc: "Honorable and stoic, the Chillmarrow are as uncompormising as the ice they call home. ",
+      img: "https://i.imgur.com/2Z14LnV.png",
+      map: "https://i.imgur.com/jx5UKlV.png"
+    },
+    {
+      id: "1",
+      icon: "asset/mobile.png",
+      title: "Dominae",
+      mainTitle: "races of byron",
+      titleStyle: "Byron-title-1",
+      subtitleStyle: "Byron-subtitle-1",
+      bulletStyle: "Byron-bullets-1",
+
+      descriptionTitleStyle: "Byron-description-title-1",
+      descriptionStyle: "Byron-description-1",
+
+      descriptionTitle1: "Frozen Gills",
+      description1: "Millennia of evolution have prepared the Chillmarrow to swim breath and live beneath the slushy ice of the swamp. Their skin secretes a special viscous liquid which causes the ice around them to temporarily revert to its liquid form. This gives the chillmarrow the unique ability to \"swim\" through ice. ",
+
+      descriptionTitle2: "Meltwater Swamp",
+      description2: "The Chillmarrow live in Meltwater Swamp, a desolate frozen swampland in the north west of Byron. They live primarily as ice fishermen collecting the plants and animals which can survive in the frozen swamp to survive. They live in small tribal units which meet frequently to share stories and tea with each other.", descriptionStyle: "Byron-description-1",
+
+      descriptionTitle3: "Strength and Honor",
+      description3: " The feircely individualist Chillmarrow value nothing as highly as their honor. Their intense focus on honor gives them a reputation as strict stoic, uncompromising yet very dependable. Although Chillmarrow tend to keep to themselves they enjoy a good reputation among the other races in the System.",
+
+      descriptionTitle4: "Abilities and Drawbacks",
+      abilityTitle1: "Aquatic Adaptations: ",
+      abilityTitle2: " Marsh Walker: ",
+      drawbackTitle1: "Cold Feet: ",
+      ability1: "Gain a swim speed equal to your land movment speed. Gain the ability to breath underwater permanently per the spell Water Breathing.",
+      ability2: "Gain the Ability to earth glide, per the spell Earth Glide through any frozen liquid.",
+      drawback1: "Cannot exceed 30ft of movement (on land) in any turn. This penalty includes movment from 5ft steps, charge attacks and the run action",
+
+
+
+
+      desc: "Honorable and stoic, the Chillmarrow are as uncompormising as the ice they call home. ",
+      img: "https://i.imgur.com/2Z14LnV.png",
+      map: "https://i.imgur.com/jx5UKlV.png"
     }
     // {
     //   id: "1",
@@ -144,65 +180,24 @@ const Byron = () => {
   return (
 
 
-<div>
-    {/* // <AwesomeSlider className="App" style={sliderSettings.sliderSettings} fillParent={true}> */}
-      
-        <div className="App" >
-          <div className= "bg-img" ></div>
-
+    <div>
+      <AwesomeSlider className="App" style={sliderSettings.sliderSettings} fillParent={true}>
+        {data.map(function (entries, i) {
+          return <div className="Content">
+            <div className="bg-img" ></div>
             <div className="Page-left">
               {playerRaces.map((card) => (
                 <GenericCard key={card.id} card={card} />
               ))}
             </div>
             <div className="Page-center">
-            <div className="Byron-main-title">races of byron</div>
-            {data.map((d) => (
-              <InfoBox key={d.id} info={d} />
-              ))}
-
+              <div className="Byron-main-title">races of byron</div>
+              <InfoBox key={i} info={entries} />
             </div>
-            <div className="Page-right">
-
-            </div>
-          </div>
-
+          </div>;
+        })}
+      </AwesomeSlider>
     </div>
-    // </AwesomeSlider>
-
   );
 };
-
 export default Byron;
-
-
-
-    // <div className="App" >
-    //   <AwesomeSlider className="App" style={sliderSettings.sliderSettings} fillParent={true}>
-    //     {data.map((d) => (     
-    //       <div> 
-    //      <div className= "bg-img" style={{backgroundImage: `url("https://i.imgur.com/2Z14LnV.png")`}} ></div>
-
-
-          
-    //       <div className="Page-left">
-    //         {/* {playerRaces.map((card) => (
-    //           <FlipCard key={card.id} card={card} />
-    //         ))} */}
-    //       </div>
-    //       <div className="Page-center">
-    //       <InfoBox key={data.id} info={data} />
-
-    //       {/* {playerRaces.map((card) => (
-    //           <FlipCard key={card.id} card={card} />
-    //         ))} */}
-    //       </div>
-    //       <div className="Page-right">
-    //       {/* {playerRaces.map((card) => (
-    //           <FlipCard key={card.id} card={card} />
-    //         ))} */}
-    //       </div>
-    //     </div>  
-    //             ))}
-    //   </AwesomeSlider>
-    // </div>
