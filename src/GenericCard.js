@@ -25,18 +25,18 @@ function GenericCard({ card }) {
                     <img alt="card" className="photo" src={card.imageLink} ></img>
                     <div className={card.descriptionTitleStyle}>{card.descriptionTitle1}</div>
                     <div className="icon-container">                    
-                        <img alt="card" className="Byron-icon" src="https://i.imgur.com/oTcgXuW.png" ></img>
-                        <div className="Byron-icon-title">Aquatic Adaptations</div>
+                        <img alt="card" className={card.iconStyle} src={card.traitIcon1} ></img>
+                        <div className={card.iconTitleStyle}>{card.traitTitle1} </div>
                     </div>
                     <div className="icon-container">                    
-                        <img alt="card" className="Byron-icon" src="https://i.imgur.com/h5UJwdD.png" ></img>
-                        <div className="Byron-icon-title">Marsh Walker</div>
+                        <img alt="card" className={card.iconStyle} src={card.traitIcon2} ></img>
+                        <div className={card.iconTitleStyle}>{card.traitTitle2}</div>
                     </div>
                     <div className={card.descriptionTitleStyle}>{card.descriptionTitle2}</div>
 
                     <div className="icon-container">                    
-                        <img alt="card" className="Byron-icon" src="https://i.imgur.com/fC0cfDR.png" ></img>
-                        <div className="Byron-icon-title">Cold Feet</div>
+                        <img alt="card" className={card.iconStyle} src={card.drawbackIcon1} ></img>
+                        <div className={card.iconTitleStyle}>{card.drawbackTitle1}</div>
                     </div>
                     {/* <div className={card.descriptionStyle}>{card.description1}</div>
                     <div className={card.descriptionTitleStyle}>{card.descriptionTitle2}</div>

@@ -80,6 +80,8 @@
     width:100%;
     height:auto;
     opacity: 1.0;
+    max-height:275px;
+
     /* margin: 3%; */
   }
 
